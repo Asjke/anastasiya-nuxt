@@ -3,7 +3,7 @@
     .container
       .header-nav
         .header-item
-          a(href="https://prodoctorov.ru/kazan/vrach/684097-butorina/") +79274238025
+          a(href="tel:+79536802511") +79536802511
         .header-item-center
           .header-item-name Анастасия Александровна Буторина
           .header-item-proff Врач Педиатр

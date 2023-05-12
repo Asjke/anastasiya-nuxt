@@ -1,0 +1,80 @@
+.footer{
+  margin-top: 20px;
+  display: flex;
+  background-color: rgba(212, 131, 194, 30%);
+  min-height: 300px;
+}
+.footer-grid{
+  display: flex;
+  font-size: 28px;
+  justify-content: space-between;
+  margin: 20px;
+  @include media(s) {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+.contacts{
+  display: flex;
+  flex-direction: column;
+  font-size: 32px;
+  font-weight: 600;
+}
+.contacts-list{
+  margin-top: 20px;
+  font-size: 24px;
+}
+.contacts-item{
+  padding-top: 15px;
+  font-weight: 400;
+  a{
+    color: #4A4A84;
+  }
+  &--svg{
+    img{
+      width: 40px;
+    }
+  }
+}
+.buy-info__documents{
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  gap: 10px;
+}
+
+.buy-info__item{
+  display: flex;
+  align-items: center;
+}
+
+.buy-info__link{
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.buy-info__link:hover{
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+.buy-info__pdf{
+  width: 40px;
+  height: auto;
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+.buy-info__pdf-title{
+  padding-left: 10px;
+}
+.buy-info__contacts{
+  font-size: 32px;
+  font-weight: 600;
+}
+.buy-info__contacts-item{
+  padding-top: 10px;
+  font-size: 24px;
+  font-weight: 400;
+}

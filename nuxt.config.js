@@ -41,6 +41,8 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots'
   ],
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
@@ -53,5 +55,23 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: [/^element-ui/],
+  },
+  sitemap: {
+    hostname: 'https://anastasiya-butorina.ru/',
+    gzip: true,
+    exclude: [
+    ],
+    routes: async () => {
+      // Получаем список маршрутов динамически
+      const routes = [
+        '/'
+      ]
+      return routes
+    }
+  },
+  robots: {
+    UserAgent: '*',
+    Disallow: '',
+    Sitemap: 'https://anastasiya-butorina.ru/sitemap.xml'
   }
 }

@@ -76,7 +76,7 @@ main{
   align-items: baseline;
   width: 100%;
   gap: 10px;
-  @include media(s) {
+  @include media(xs) {
     align-items: center;
     flex-wrap: wrap;
     padding-bottom: 20px;

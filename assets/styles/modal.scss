@@ -1,0 +1,20 @@
+.modal-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+}
+.modal-text{
+  font-size: 24px;
+  font-weight: 600;
+}
+.el-dialog__wrapper{
+  .el-dialog{
+    border: 3px solid #eecbe5;
+    border-radius: 29px;
+  }
+  .el-dialog__body{
+    word-break: break-word;
+  }
+}
